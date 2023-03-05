@@ -143,9 +143,9 @@
     padding: 10px 0px;
 }
 
-.main-header-nav-item.have-sub-nav:hover .sub-nav-list {
+/* .main-header-nav-item.have-sub-nav:hover .sub-nav-list {
     display: inline-block;
-}
+} */
 
 .main-header-nav-link{
     display: inline-block;
@@ -161,9 +161,9 @@
     color: var(--white);
 }
 
-.main-header-nav-item:hover .main-header-nav-link{
+/* .main-header-nav-item:hover .main-header-nav-link{
     color: var(--color-mainmenu-link-hover);
-}
+} */
 
 /* SUB-NAV */
 .sub-nav-list{
@@ -177,6 +177,7 @@
     padding: 15px 0px;
     transition: ease-in all 0.3s;
     box-shadow: var(--box-shadow);
+    z-index: 10;
 }
 .sub-nav-item{
     position: relative;
@@ -198,9 +199,9 @@
 }
 
 /* SUB_NAV LEVEL 2 */
-.have-sub-nav-level-2:hover .sub-nav-level-2{
+/* .have-sub-nav-level-2:hover .sub-nav-level-2{
     display: inline-block !important;
-}
+} */
 .sub-nav-level-2{
     display: none !important;
     top: -15px;
@@ -211,9 +212,9 @@
 
 /* SUB-NAV POST */
 
-.have-sub-nav-post:hover .sub-nav-sidebar{
+/* .have-sub-nav-post:hover .sub-nav-sidebar{
     display: block;
-}
+} */
 .sub-nav-sidebar{
     display: none;
     position: absolute;
@@ -812,6 +813,7 @@
 
 .about-section{
     width: 30%;
+    padding-right: 30px;
 }
 .latest-section{
     width: 20%;
@@ -905,4 +907,102 @@
 
 .footer-social-item a:hover {
     color: var(--color-grey);
+}
+
+
+/* CUSTOM CSS */
+
+.left-column {
+    position: relative;
+    color: #ef1a1a;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.left-column::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 100%;
+    background-color: #ef1a1a;
+    left: -10px;
+}
+
+.text-wrapper {
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+.main-products p {
+    font-weight: 600;
+}
+
+.main-products ul {
+    list-style-type: none;
+}
+
+.read-more {
+    width: 161px;
+    height: 30px;
+    margin-bottom: 65px;
+    border: 2px solid #273983;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.read-more a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #273983;
+    font-weight: 500;
+}
+
+.read-more a:hover {
+    text-decoration: none;
+}
+
+.read-more a i {
+    margin-left: 5px;
+    height: 13px;
+    color: #273983;
+}
+
+/* ABOUT PAGE */
+.title {
+    text-align: center;
+    font-size: 28px;
+    color: #000080;
+}
+
+.company-name {
+    text-align: center;
+    font-size: 16px;
+}
+
+.about-page {
+    font-size: 16px;
+}
+
+.col-title {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.col-title p {
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.col-content {
+    margin-bottom: 20px;
+}
+
+.col-content ul {
+    list-style-type: none;
 }
